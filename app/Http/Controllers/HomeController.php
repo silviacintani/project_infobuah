@@ -18,8 +18,9 @@ class HomeController extends Controller
         return view('tampilan',$data);
     }
 
-    public function manfaat(){
-        return view('manfaat');
+    public function manfaat($id){
+        $data['buah'] = Buah::find($id);
+        return view('manfaat', $data);
     }
 
     public function informasi(){
@@ -34,35 +35,15 @@ class HomeController extends Controller
         return view('dashboard');
     }
 
-    public function manfaata(){
-        return view('manfaata');
-    }
-
-    public function manfaatk(){
-        return view('manfaatk');
-    }
-
-    public function manfaatt(){
-        return view('manfaatt');
-    }
-
-    public function manfaats(){
-        return view('manfaats');
-    }
-
-    public function manfaatp(){
-        return view('manfaatp');
-    }
-
-    public function manfaatm(){
-        return view('manfaatm');
-    }
-
     public function manfaatd(){
         return view('manfaatd');
     }
 
-    public function manfaatap(){
-        return view('manfaatap');
+    public function manfaati(){
+        return view('manfaati');
+    }
+
+    public function manfaatk(){
+        return view('manfaatk');
     }
 }

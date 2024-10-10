@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Buah;
+use App\Models\Manfaat;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -31,7 +32,7 @@ class DatabaseSeeder extends Seeder
 
         Buah::create([
             'nama_buah' => 'manggis',
-            'deskripsi' => 'apa yaa atuhh bingung',
+            // 'deskripsi' => 'apa yaa atuhh bingung',
             'manfaat' => 'bhdfjdkrj',
             'foto' => ''
         ]);

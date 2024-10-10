@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BuahController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ManfaatController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,18 +27,12 @@ Route::get('/dashboard', [UserController::class, 'dashboard']);
 Route::get('/', [HomeController::class, 'login']);
 Route::post('/auth',[UserController::class, 'authentication']);
 Route::get('/tampilan', [HomeController::class, 'show']);
-// Route::get('/manfaat', [HomeController::class, 'manfaat']);
-Route::get('/manfaata', [HomeController::class, 'manfaata']);
-Route::get('/manfaatk', [HomeController::class, 'manfaatk']);
-Route::get('/manfaatap', [HomeController::class, 'manfaatap']);
+Route::get('/manfaat/{id}', [HomeController::class, 'manfaat']);
 Route::get('/manfaatd', [HomeController::class, 'manfaatd']);
-Route::get('/manfaatm', [HomeController::class, 'manfaatm']);
-Route::get('/manfaatp', [HomeController::class, 'manfaatp']);
-Route::get('/manfaats', [HomeController::class, 'manfaats']);
-Route::get('/manfaatt', [HomeController::class, 'manfaatt']);
+Route::get('/manfaati', [HomeController::class, 'manfaati']);
+Route::get('/manfaatk', [HomeController::class, 'manfaatk']);
 Route::get('/informasi', [HomeController::class, 'informasi']);
 Route::get('/infoapelh', [HomeController::class, 'infoapelh']);
-// Route::get('/dashboard', [HomeController::class, 'dashboard']);
 Route::post('/search', [BuahController::class,'search']);
 
 
@@ -48,3 +43,12 @@ Route::post('/buah/create', [BuahController::class, 'add']);
 Route::get('/buah/edit/{id}', [BuahController::class, 'edit']);
 Route::post('/buah/update/{id}', [BuahController::class, 'update']);
 Route::get('/buah/delete/{id}', [BuahController::class, 'delete']);
+
+// User
+Route::get('/user', [UserController::class, 'show']);
+Route::post('/user', [UserController::class, 'search']);
+Route::get('/user/create', [UserController::class, 'create']);
+Route::post('/user/create', [UserController::class, 'add']);
+Route::get('/user/delete/{id}', [UserController::class, 'delete']);
+Route::get('/user/edit/{id}', [UserController::class, 'edit']);
+Route::post('/user/update/{id}', [UserController::class, 'update']);

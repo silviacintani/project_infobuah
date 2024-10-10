@@ -9,10 +9,10 @@
                 <input type="text" class="form-control" id="nama_buah" placeholder="input nama buah" name="nama_buah">
             </div>
 
-            <div class="mb-3">
+            {{-- <div class="mb-3">
                 <label for="deskripsi" class="form-label">Deskripsi</label>
                 <textarea id="deskripsi" rows="5" class="form-control" placeholder="input deskripsi buah" name="deskripsi"></textarea>
-            </div>
+            </div> --}}
 
             <div class="mb-3">
                 <label for="manfaat" class="form-label">Manfaat</label>

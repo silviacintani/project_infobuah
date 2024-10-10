@@ -14,7 +14,7 @@ class BuahController extends Controller
     $data ['buah'] = Buah::all();
     // $data['buah'] = Buah::all();
     $data['total'] = Buah::count();
-    return view('index', $data);
+    return view('/index', $data);
    } 
 
    public function search(Request $request){
@@ -30,7 +30,7 @@ class BuahController extends Controller
    public function add(Request $request){
     $validate = $request->validate([
         'nama_buah' => 'required',
-        'deskripsi' => 'required',
+        // 'deskripsi' => 'required',
         'manfaat' => 'required',
         'foto' => 'image'
     ]);
@@ -46,7 +46,7 @@ class BuahController extends Controller
     }
     $buah = Buah::create([
         'nama_buah' => $request->nama_buah,
-        'deskripsi' => $request->deskripsi,
+        // 'deskripsi' => $request->deskripsi,
         'manfaat' => $request->manfaat,
         'foto' => $fileName
     ]);
@@ -94,7 +94,7 @@ class BuahController extends Controller
    $update = Buah::where('id',$request->id)->update([
     'nama_buah' => $request->nama_buah,
     'manfaat' => $request->manfaat,
-    'deskripsi' => $request->deskripsi,
+    // 'deskripsi' => $request->deskripsi,
     'foto' => $fileName
    ]);
 

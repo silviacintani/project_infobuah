@@ -10,9 +10,9 @@
 </head>
 <body>
       <!-- navbar -->
-      <nav class="navbar navbar-expand-sm navbar-dark bg-light fixed-top">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #B99470">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand text-dark " style="margin-left: 200px">InfoBuah</a>
+            <a href="#" class="navbar-brand text-white" style="margin-left: 200px">InfoBuah</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,11 +23,14 @@
                     </div>
                 </form>
                 <ul class="navbar-nav">
-                    {{-- <li class="nav-item ">
-                        <a href="" class="nav-link text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:18px">Manfaat</a>
-                    </li>  --}}
+                    <li class="nav-item ">
+                        <a href="/tampilan" class="nav-link text-white" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:18px">Home</a>
+                    </li> 
                     <li class="nav-item">
-                        <a href="/informasi " class="nav-link text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:18px">Informasi</a>
+                        <a href="/informasi " class="nav-link text-white" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:18px">Informasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/ " class="nav-link text-white" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:18px">Logout</a>
                     </li>
                 </ul>
 
@@ -35,7 +38,22 @@
         </div>
     </nav>
 
-    <div class="container " style="margin-top: 100px;">
+    <div class="container mt-5"></div>
+    <h4 class="" style="margin-top: 100px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px; margin-left: 3%; color: #B99470">Yukk Simak Tentang</h4>
+    <h4 class="" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px; margin-left: 6%; color: #B99470">Manfaat Buah-buahan!!</h4>
+
+    <div class="row 9-0">
+        <h3 class=" mb-4" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 60px; margin-left: 16%">{{$buah->nama_buah}}</h3>
+        <div class="col-md-4">
+            <img src="{{asset('storage/foto/'.$buah->foto)}}" alt="" style="width: 400px; height:200px; margin-left:50%" class="rounded-3">
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">{{$buah->manfaat}}</div>
+        </div>
+    </div>
+
+
+    {{-- <div class="container " style="margin-top: 100px;">
         <h4 class="text-black " style="margin-bottom: 80px; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px;">Manfaat Buah Buahan</h4>
         <div class="row">
             <div class="col-md-3">
@@ -47,7 +65,7 @@
                         <div class="card-text" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
                             Apel mengandung vitamin C yang membantu meningkatkan sistem kekebalan tubuh. Vitamin C dapat membantu melawan infeksi dan meningkatkan produksi sel darah putih yang penting dalam melawan infeksi dan penyakit. 
                         </div>
-                        <!-- <a href="#" class="btn btn-dark">Baca Selengkapnya....</a> -->
+                        <a href="#" class="btn btn-dark">Baca Selengkapnya....</a>
                     </div>
             </div>
 
@@ -60,7 +78,7 @@
                         <div class="card-text" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
                             Stroberi adalah sumber vitamin C yang sangat baik, yang berperan penting dalam meningkatkan sistem kekebalan tubuh, membantu penyembuhan luka, dan meningkatkan kesehatan kulit.
                         </div>
-                        <!-- <a href="#" class="btn btn-dark">Baca Selengkapnya....</a> -->
+                         <a href="#" class="btn btn-dark">Baca Selengkapnya....</a>
                     </div>
             </div>
 
@@ -105,7 +123,7 @@
                             Menjaga berat badan, karena alpukat mengandung serat dan karbohidrat yang memberikan rasa kenyang lebih lama.
                             Mengontrol tekanan darah, karena alpukat mengandung kalium yang membantu menyeimbangkan cairan tubuh.
                         </div>
-                        <!-- <a href="#" class="btn btn-dark">Baca Selengkapnya....</a> -->
+                         <a href="#" class="btn btn-dark">Baca Selengkapnya....</a>
                     </div>
             </div>
 
@@ -118,7 +136,7 @@
                         <div class="card-text" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
                             Stroberi adalah sumber vitamin C yang sangat baik, yang berperan penting dalam meningkatkan sistem kekebalan tubuh, membantu penyembuhan luka, dan meningkatkan kesehatan kulit.
                         </div>
-                        <!-- <a href="#" class="btn btn-dark">Baca Selengkapnya....</a> -->
+                         <a href="#" class="btn btn-dark">Baca Selengkapnya....</a> 
                     </div>
             </div>
 
@@ -151,7 +169,7 @@
                 </div>
             </div>
         </div> 
-    </div>    
+    </div>     --}}
 
     <!-- footer -->
     <footer class=" text-black mt-5">

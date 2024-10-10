@@ -41,10 +41,10 @@
         <div class="container" style="margin-top: 100px">
             <h4 class="" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px;  color: #B99470">Yukk Simak Tentang</h4>
             <h4 class="" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px; color: #B99470; margin-left: 50px">Manfaat Buah-buahan!!</h4>
-                <img src="image/alpukat.webp" class="card-img-top rounded-3" alt="" style="width: 400px; height: 250px;margin-top: 50px">
+                <img src="image/pisang.webp" class="card-img-top rounded-3" alt="" style="width: 400px; height: 250px;margin-top: 50px">
                 <div class="card-body">
                     <h6 class="card-text mt-3" style="font-size: 30px;">
-                        Alpukat
+                        Pisang
                     </h6>
                     <div class="card-text" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">
                         pisang mengandung kalium, sumber karbohidrat dan vitamin A, perlancar metabolisme, meningkatkan kekebalan tubuh, melancarkan aliran oksigen ke otak, mengatasi anemia, hingga dapat menurunkan berat badan dan masih banyak lagi.

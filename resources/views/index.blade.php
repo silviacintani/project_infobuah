@@ -39,7 +39,7 @@
                         <tr class="table-light">
                             <th>NO</th>
                             <th>NAMA BUAH</th>
-                            <th>DESKRIPSI</th>
+                            {{-- <th>DESKRIPSI</th> --}}
                             <th>MANFAAT</th>
                             <th>FOTO</th>
                             <th>AKSI</th>
@@ -48,12 +48,12 @@
                         <tr>
                             <td>{{$key+1}}</td>
                             <td>{{$item->nama_buah}}</td>
-                            <td>{{$item->deskripsi}}</td>
+                            {{-- <td>{{$item->deskripsi}}</td> --}}
                             <td>{{$item->manfaat}}</td>
                             <td><img src="{{asset ('/storage/foto/'.$item->foto) }}" alt="" style="width: 50px; height:50px"></td>
                             <td>
-                                <a href="/buah/delete/{{ $item->id }}" onclick="return window.confirm('Yakin hapus data ini?')" class="btn btn-secondary">Hapus</a>
-                                <a href="/buah/edit/{{ $item->id }}" class="btn btn-secondary">Edit</a>
+                                <a href="/buah/delete/{{ $item->id }}" onclick="return window.confirm('Yakin hapus data ini?')" class="btn btn-danger">Hapus</a>
+                                <a href="/buah/edit/{{ $item->id }}" class="btn btn-info">Edit</a>
                             </td>
                         </tr>
                         @endforeach
